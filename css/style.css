@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white:hsl(0, 0%, 100%);
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-fraunces: 'Fraunces', serif;
+  }
+
+  *{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--cream);
+}
+
+main{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mycol1{
+    width: 21.4375rem;
+    height: 15rem;
+    padding:0;
+    margin:0;
+}
+
+.mycol2{
+    background-color:var(--white);
+    width: 21.4375rem;
+    height: 23.1875rem;
+    margin:0;
+    padding:0;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.card-title{
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 32%;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  padding: 1.6875rem 0rem 1.1875rem 1.5625rem;
+  margin:0;
+}
+
+.card-subtitle{
+  font-family: var(--font-fraunces);
+  font-weight: 700;
+  font-size: 2rem;
+  columns: var(--very-dark-blue);
+  padding: 0 0 1.65rem 1.5625rem;
+}
+
+.card-text{
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: -0.02rem;
+  word-spacing: 0.09rem;;
+  line-height: 1.5;
+  color: var(--dark-grayish-blue);
+  padding: 0 0 0 1.5625rem;
+  margin-right:0.7rem;
+}
+
+.myprices{
+  align-items: center;
+  margin: 0 0 0 1.5625rem;
+}
+
+.card-price{
+  font-family: var(--font-fraunces);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--dark-cyan);
+}
+
+.card-full-price{
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: var(--dark-grayish-blue);
+}
+
+.mybutton{
+  justify-content: center;
+}
+
+.btn-primary{
+  background-color: var(--dark-cyan);
+  width: 80%;
+}
+
+.btn-primary:hover{
+  background-color: var(--very-dark-blue);
+}
+
+@media screen and (min-width:37.5rem){
+
+  img{
+      content:url("/images/image-product-desktop.jpg");
+  }
+  .mycol1, .mycol2{
+      width: 18.75rem;
+      height: 28.125rem;
+  }
+ 
+  .card-subtitle{
+    margin-right: 2.5rem;
+  }
+
+  .card-text{
+    margin-right: 2rem;
+  }
+
+}
